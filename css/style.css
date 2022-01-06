@@ -13,9 +13,9 @@
 body {
 	height: 100vh;
 	font-family: 'Helvetica Light';
-	/* background-color: aliceblue; */
-	background-image: url(https://i.imgur.com/M4N4B4h.jpg);
-	background-size: cover;
+	background-color: aliceblue;
+	/* background-image: url(https://i.imgur.com/M4N4B4h.jpg);
+	background-size: cover; */
 	/* font-size: 30px; */
 	/* justify-content: center;
 	align-items: center; */
