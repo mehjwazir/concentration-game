@@ -12,6 +12,11 @@
 
 body {
 	height: 100vh;
+	font-family: 'Helvetica Light';
+	/* background-color: aliceblue; */
+	background-image: url(https://i.imgur.com/M4N4B4h.jpg);
+	background-size: cover;
+	/* font-size: 30px; */
 	/* justify-content: center;
 	align-items: center; */
 
@@ -24,15 +29,22 @@ div {
 
 #iphone {
 	/* height: 50%; */
-	width: 53%;
-	margin: 0 auto;
+	width: 18%;
+	margin: auto;
 
 	/* display: block; */
 }
 
-header {
-	margin-bottom: 0;
+h1 {
+	font-family: 'Helvetica';
+	background-color: grey;
+	color: white;
+	font-size: 30px;
+	font-weight: lighter;
+	margin-top: 0;
+	margin-bottom: 30px;
 	text-align: center;
+
 
 }
 
@@ -68,4 +80,15 @@ img {
 
 section {
 	text-align: center;
+}
+
+.btn {
+	font-size: 1.5vmin;
+	text-align: center;
+	display: block;
+	height: 38px;
+	width: 38px;
+	border-radius: 20%;
+	border: 1px solid black;
+
 }
