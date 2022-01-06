@@ -37,7 +37,7 @@ div {
 
 h1 {
 	font-family: 'Helvetica';
-	background-color: grey;
+	background-color: gray;
 	color: white;
 	font-size: 30px;
 	font-weight: lighter;
@@ -46,6 +46,10 @@ h1 {
 	text-align: center;
 
 
+}
+
+h3 {
+	color: gray;
 }
 
 main {
