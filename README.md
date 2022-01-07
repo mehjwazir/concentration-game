@@ -29,7 +29,7 @@ The Apple iPhone game is a minimal approach to the concentration card game. To p
 
 # Getting Started #
 
-[Click here to play!]()
+[Click here to play!](https://mehjwazir.github.io/concentration-game/)
 
 
 # Next Steps #
