@@ -1,16 +1,4 @@
 
-// /*----- constants -----*/
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-// 	const cardArray = [
-// 		{
-// 			name: '',
-// 			img: ''
-// 		}
-// 	]
-// })
-
 /*----- constants -----*/
 const SOURCE_CARDS = [
   {img: 'https://i.imgur.com/o3QQlNx.png', matched: false},
@@ -22,8 +10,10 @@ const SOURCE_CARDS = [
   {img: 'https://i.imgur.com/0JplpU2.png', matched: false},
   {img: 'https://i.imgur.com/ERdyzd7.png', matched: false}
 ];
+
+
 const CARD_BACK = 'https://i.imgur.com/nPiEAp6.png?1'; 
-const DISPLAY_CARD_TIME = 3000;
+const DISPLAY_CARD_TIME = 1000;
 
 
 /*----- app's state (variables) -----*/
@@ -37,8 +27,12 @@ let winner;
 /*----- cached element references -----*/
 const cardImgEls = document.querySelectorAll('main > img');
 const badCountEl = document.querySelector('h3');
+const btnEl = document.querySelector('button');
+
+
 /*----- event listeners -----*/
 document.querySelector('main').addEventListener('click', handleChoice);
+btnEl.addEventListener('click', init);
 
 
 /*----- functions -----*/
@@ -98,6 +92,7 @@ function buildShuffledCards() {
 }
 
 function render() {
+btnEl.style.visibility = winner ? 'visible' : 'visible';
   cards.forEach(function(card, idx) {
     const src = card.matched || selectedCard === card ? card.img : CARD_BACK; 
     cardImgEls[idx].src = src;
@@ -105,6 +100,6 @@ function render() {
   if (winner) {
     badCountEl.innerHTML = 'You Win!';
   } else {
-    badCountEl.innerHTML = `Bad Count: ${badGuessCount}`;
+    badCountEl.innerHTML = ` Moves: ${badGuessCount}`;
   }
 }

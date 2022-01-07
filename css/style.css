@@ -1,11 +1,3 @@
-/* .grid {
-	display: flex;
-	flex-wrap: wrap;
-	height: 300px;
-	width: 400px;
-
-} */
-
 * {
 	box-sizing: border-box;
 }
@@ -14,13 +6,6 @@ body {
 	height: 100vh;
 	font-family: 'Helvetica Light';
 	background-color: aliceblue;
-	/* background-image: url(https://i.imgur.com/M4N4B4h.jpg);
-	background-size: cover; */
-	/* font-size: 30px; */
-	/* justify-content: center;
-	align-items: center; */
-
-
 }
 
 div {
@@ -28,16 +13,17 @@ div {
 }
 
 #iphone {
-	/* height: 50%; */
 	width: 18%;
 	margin: auto;
-
-	/* display: block; */
 }
 
 h1 {
 	font-family: 'Helvetica';
-	background-color: gray;
+	background-color: #404040;
+	background-image: url(https://i.imgur.com/0pADCME.png);
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: 38% center;
 	color: white;
 	font-size: 30px;
 	font-weight: lighter;
@@ -53,7 +39,6 @@ h3 {
 }
 
 main {
-	/* height: 50vmin; */
 	display: grid;
 	grid-template-columns: repeat(4, 5vmin);
 	grid-template-rows: repeat(4, 5vmin);
@@ -68,8 +53,6 @@ main {
 	right: 0;
 	width: 26vmin;
 	padding: 0;
-	/* width: 50%; */
-
 }
 
 .container {
@@ -81,6 +64,8 @@ img {
 	width: 100%;
 	border-radius: 1vmin;
 }
+
+
 
 section {
 	text-align: center;
@@ -95,4 +80,14 @@ section {
 	border-radius: 20%;
 	border: 1px solid black;
 
+}
+
+button:hover {
+	color: white;
+	background-color: black;
+}
+
+img:hover {
+	transform: scale(1.1);
+	transition: transform 150ms ease-in;
 }
