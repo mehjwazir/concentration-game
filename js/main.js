@@ -22,6 +22,7 @@ let selectedCard;
 let badGuessCount;
 let ignoreClick;
 let winner;
+let lose;
 
 
 /*----- cached element references -----*/
@@ -62,7 +63,8 @@ function handleChoice(evt) {
       winner = cards.every(card => card.matched);
     } else {
       ignoreClick = true;
-      badGuessCount++;
+		badGuessCount++;
+		lose = badGuessCount === 20;
       // hack
       card.matched = true;
       setTimeout(function() {
@@ -98,8 +100,12 @@ btnEl.style.visibility = winner ? 'visible' : 'visible';
     cardImgEls[idx].src = src;
   });
   if (winner) {
-    badCountEl.innerHTML = 'You Win!';
-  } else {
-    badCountEl.innerHTML = ` Moves: ${badGuessCount}`;
-  }
+	  badCountEl.innerHTML = 'You Win!';
+	  
+  } else if (lose ) {
+    badCountEl.innerHTML =  'You Lose!';
+  } else { 
+	  badCountEl.innerHTML = ` Moves: ${badGuessCount}`;
+	  
+}
 }
