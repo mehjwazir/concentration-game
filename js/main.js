@@ -64,7 +64,7 @@ function handleChoice(evt) {
     } else {
       ignoreClick = true;
 		badGuessCount++;
-		lose = badGuessCount === 20;
+		lose = badGuessCount === 16;
       // hack
       card.matched = true;
       setTimeout(function() {
