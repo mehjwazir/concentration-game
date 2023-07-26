@@ -1,18 +1,18 @@
 
 /*----- constants -----*/
 const SOURCE_CARDS = [
-  {img: 'https://i.imgur.com/o3QQlNx.png', matched: false},
-  {img: 'https://i.imgur.com/hxuKObH.png', matched: false},
-  {img: 'https://i.imgur.com/TyllmyO.png', matched: false},
-  {img: 'https://i.imgur.com/dPUfFQh.png', matched: false},
-  {img: 'https://i.imgur.com/1nx0EfP.png', matched: false},
-  {img: 'https://i.imgur.com/FRhOhEI.png', matched: false},
-  {img: 'https://i.imgur.com/0JplpU2.png', matched: false},
-  {img: 'https://i.imgur.com/ERdyzd7.png', matched: false}
+  {img: 'images/insta.png', matched: false},
+  {img: 'images/slack1.png', matched: false},
+  {img: 'images/youtube1.png', matched: false},
+  {img: 'images/snapchat1.png', matched: false},
+  {img: 'images/fb1.png', matched: false},
+  {img: 'images/twitter1.png', matched: false},
+  {img: 'images/tiktok1.png', matched: false},
+  {img: 'images/linkedin1.png', matched: false}
 ];
 
 
-const CARD_BACK = 'https://i.imgur.com/nPiEAp6.png?1'; 
+const CARD_BACK = 'images/blacksquare.png'; 
 const DISPLAY_CARD_TIME = 1000;
 
 

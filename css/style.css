@@ -1,5 +1,7 @@
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -12,15 +14,11 @@ div {
 	text-align: center;
 }
 
-#iphone {
-	width: 18%;
-	margin: auto;
-}
+
 
 h1 {
 	font-family: 'Helvetica';
 	background-color: #404040;
-	background-image: url(https://i.imgur.com/0pADCME.png);
 	background-size: 20px;
 	background-repeat: no-repeat;
 	background-position: 38% center;
@@ -34,10 +32,19 @@ h1 {
 
 }
 
+.appleicon {
+	height:20px;
+	width: 20px;
+}
+
 h3 {
 	color: gray;
 }
 
+
+#iphone{
+	margin-top: 2rem;
+}
 main {
 	display: grid;
 	grid-template-columns: repeat(4, 5vmin);
@@ -46,7 +53,7 @@ main {
 	position: absolute;
 	z-index: 10;
 	top: 0;
-	margin-top: 25vmin;
+	margin-top: 28vmin;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
@@ -55,12 +62,9 @@ main {
 	padding: 0;
 }
 
-.container {
-	position: relative;
-	height: 100%;
-}
 
-img {
+
+.square {
 	width: 100%;
 	border-radius: 1vmin;
 }
@@ -90,4 +94,34 @@ button:hover {
 img:hover {
 	transform: scale(1.1);
 	transition: transform 150ms ease-in;
+}
+
+@media screen and (max-width: 768px) {
+
+#iphone {
+	margin-top: 5rem;
+	height: 60%;
+	width: 50%;
+}
+
+
+.phone-grid {
+
+	display: grid;
+	grid-template-columns: repeat(4, 5vmin);
+	grid-template-rows: repeat(4, 5vmin);
+	gap: 2vmin;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	margin-top: 50vmin;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	width: 26vmin;
+	padding: 0;
+}
+
+
 }

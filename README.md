@@ -34,6 +34,6 @@ The Apple iPhone game is a minimal approach to the concentration card game. To p
 
 # Next Steps #
 
-* Add additional features
+* Add additional features.
 * Include more Apple Icons and text. 
 
